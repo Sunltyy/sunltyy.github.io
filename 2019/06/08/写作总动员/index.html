@@ -288,11 +288,11 @@
     <div id="comments">
         <script>
             var gitment = new Gitment({
-                owner: 'Sunltyy',
-                repo: 'git@github.com:Sunltyy/comments.git',
+                owner: '<%- theme.gitment.owner %>',
+                repo: '<%- theme.gitment.repo %>',
                 oauth: {
-                    client_id: 'd09e4bd8bf02ef7bd631',
-                    client_secret: 'e85c1bb208822871bbf0635db113851e8b965ec4',
+                    client_id: '<%- theme.gitment.client_id %>',
+                    client_secret: '<%- theme.gitment.client_secret %>',
                 },
             })
             gitment.render('comments')
