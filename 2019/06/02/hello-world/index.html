@@ -288,6 +288,23 @@
 
 
     
+        <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+    <div id="comments">
+        <script>
+            var gitment = new Gitment({
+                owner: 'Sunltyy',
+                repo: 'git@github.com:Sunltyy/comments.git',
+                oauth: {
+                    client_id: 'd09e4bd8bf02ef7bd631',
+                    client_secret: 'e85c1bb208822871bbf0635db113851e8b965ec4',
+                },
+            })
+            gitment.render('comments')
+        </script>
+    </div>
+
+    
 </section>
         
       </div>
@@ -341,7 +358,7 @@
 <div class="sidebar-menu-box" id="sidebar-menu-box">
     <div class="sidebar-menu-box-container">
         <div id="sidebar-menu-box-categories">
-            
+            <a class="category-link" href="/categories/带娃随笔/">带娃随笔</a>
         </div>
         <div id="sidebar-menu-box-tags">
             
