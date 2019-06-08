@@ -283,22 +283,19 @@
 
 
     
-        <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
-    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
-    <div id="comments">
-        <script>
-            var gitment = new Gitment({
-                owner: '<%- theme.gitment.owner %>',
-                repo: '<%- theme.gitment.repo %>',
-                oauth: {
-                    client_id: '<%- theme.gitment.client_id %>',
-                    client_secret: '<%- theme.gitment.client_secret %>',
-                },
-            })
-            gitment.render('comments')
-        </script>
-    </div>
-
+        <section id="comments">
+            <div id="disqus_thread">
+                <script type="text/javascript">
+                    var disqus_shortname = 'true';
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </div>
+        </section>
     
 </section>
         
