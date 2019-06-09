@@ -271,21 +271,21 @@
 
 
     
-        <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
-    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
-    <div id="comments">
-        <script>
-            var gitment = new Gitment({
-                owner: '<%- theme.gitment.owner %>',
-                repo: '<%- theme.gitment.repo %>',
-                oauth: {
-                    client_id: '<%- theme.gitment.client_id %>',
-                    client_secret: '<%- theme.gitment.client_secret %>',
-                },
-            })
-            gitment.render('comments')
-        </script>
-    </div>
+    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+<script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+<div id="comments">
+    <script>
+        var gitment = new Gitment({
+            owner: 'Sunltyy',
+            repo: 'git@github.com:Sunltyy/comments.git',
+            oauth: {
+                client_id: 'e0aa94c2267e7b8cf217',
+                client_secret: 'fe880d17fa7a0a6fde7a2b9a7930784f45d2d8d1',
+            },
+        })
+        gitment.render('comments')
+    </script>
+</div>
 
     
 </section>
